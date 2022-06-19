@@ -20,7 +20,7 @@ const config = {
 		vite: {
 			build: {
 				minify: true, // boolean| "terser"|"esbuild",
-				sourcemap: false,
+				sourcemap: false
 				// https://github.com/vitejs/vite/discussions/7447
 				// TO BE RESOLVED
 				// rollupOptions: {
@@ -34,15 +34,14 @@ const config = {
 				// 			})
 				// 	],
 				// }
-			},
-			
+			}
 		}
 	},
 	preprocess: [
 		preprocess({
 			postcss: true
 		})
-	],
+	]
 };
 
 export default config;
